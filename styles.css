@@ -129,6 +129,18 @@ img {
   transition: 0.7s;
 }
 
+.button-list .badge::before {
+  position: absolute;
+  content: "";
+  background: #FF6900;
+  width: 15px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.7s;
+}
+
 .button-list button:hover::before {
   width: 100%;
 }
@@ -170,19 +182,14 @@ img {
   color: var(--color);
 }
 
-.icon .instagram a:hover {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.icon .medium a:hover {
   transform: translateY(-8px);
+  color: var(--color);
+}
+
+.progress {
+  color: #e08013;
+  font-style: italic;
 }
 
 /* footer */
